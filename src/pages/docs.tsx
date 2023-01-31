@@ -1,4 +1,5 @@
 import React from 'react'
+import { Script } from 'gatsby'
 import Layout from 'components/Layout'
 import { SEO } from 'components/seo'
 import Icon from 'components/SupportImages/Icon'
@@ -141,6 +142,7 @@ export const DocsIndex: React.FC = () => {
     return (
         <Layout>
             <SEO title="Documentation - PostHog" />
+            <Script id="bloop" src="https://js.bloop.ai/iframe/loader.js" type="text/javascript" />
 
             <PostLayout article={false} title={'Docs'} menu={docs} hideSidebar hideSurvey>
                 <div className="space-y-16 lg:space-y-20 lg:-mt-12 mb-8">
